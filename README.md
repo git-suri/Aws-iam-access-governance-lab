@@ -75,15 +75,15 @@ Rule: **User -> Group -> Policy -> Resource.** Nothing is attached directly to a
 
 ![IAM-001 joiner](images/05-iam001-joiner.png.png)
 
-*IAM-001: alice joins Finance-Group. The finance bucket is allowed and EC2 is denied.*
+*IAM-001-joiner: alice joins Finance-Group. The finance bucket is allowed and EC2 is denied.*
 
 ![IAM-002 mover](images/06-iam002-mover.png.png)
 
-*IAM-002: Finance-Group removed first, then Support-Group added.*
+*IAM-002-mover: Finance-Group removed first, then Support-Group added.*
 
 ![IAM-003 leaver](images/07-iam003-leaver.png.png)
 
-*IAM-003: charlie's console access is disabled and no groups or policies remain.*
+*IAM-003-leaver: charlie's console access is disabled and no groups or policies remain.*
 
 ### Troubleshooting
 
