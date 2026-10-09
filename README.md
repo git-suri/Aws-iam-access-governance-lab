@@ -4,7 +4,7 @@ A hands-on AWS IAM project that manages employee access by job role. Users get p
 
 > All employee names, managers and approvers are fictional. Account identifiers are redacted in the evidence.
 
-**Full walkthrough with all screenshots:** [Project presentation (PDF)](Aws-iam-access-governance-lab.pdf.pdf)
+**Full walkthrough with all screenshots:** [Project presentation (PDF)](Aws-iam-access-governance-lab.pdf)
 
 ## The problem
 
