@@ -53,7 +53,7 @@ Rule: **User -> Group -> Policy -> Resource.** Nothing is attached directly to a
 
 ### Users, groups and least privilege
 
-![Users and groups](images/01-groups-and-users.png.png.)
+![Users and groups](images/01-groups-and-users.png.png)
 
 *Four users and four groups. Access comes only from group membership.*
 
@@ -63,41 +63,41 @@ Rule: **User -> Group -> Policy -> Resource.** Nothing is attached directly to a
 
 ### MFA enforcement
 
-![RequireMFA policy](evidence/03-requiremfa-policy.png)
+![RequireMFA policy](images/03-requiremfa-policy.png.png)
 
 *RequireMFA denies everything except MFA setup when `aws:MultiFactorAuthPresent` is false.*
 
-![Bob blocked without MFA](evidence/04-mfa-blocked.png)
+![Bob blocked without MFA](images/04-mfa-blocked.png.png)
 
 *Bob is blocked without MFA, and works after MFA is enrolled.*
 
 ### Joiner, mover, leaver
 
-![IAM-001 joiner](evidence/05-iam001-joiner.png)
+![IAM-001 joiner](images/05-iam001-joiner.png.png)
 
 *IAM-001: alice joins Finance-Group. The finance bucket is allowed and EC2 is denied.*
 
-![IAM-002 mover](evidence/06-iam002-mover.png)
+![IAM-002 mover](images/06-iam002-mover.png.png)
 
 *IAM-002: Finance-Group removed first, then Support-Group added.*
 
-![IAM-003 leaver](evidence/07-iam003-leaver.png)
+![IAM-003 leaver](images/07-iam003-leaver.png.png)
 
 *IAM-003: charlie's console access is disabled and no groups or policies remain.*
 
 ### Troubleshooting
 
-![IAM-004 CloudTrail event](evidence/08-iam004-cloudtrail.png)
+![IAM-004 CloudTrail event](images/08-iam004-cloudtrail.png.png)
 
 *IAM-004: CloudTrail showed the denied call. `ec2:DescribeVolumes` was missing from the policy, so I added it.*
 
-![FinanceS3ReadRole](evidence/09-iam005-role.png)
+![FinanceS3ReadRole](images/09-iam005-role.png.png)
 
 *IAM-005 and IAM-006: bob uses `FinanceS3ReadRole` for temporary access. The first switch failed for lack of `sts:AssumeRole`, and a later S3 read failed because the policy named one file. Both are fixed.*
 
 ### Access review
 
-![RequireMFA re-attached to Developer-Group](evidence/10-access-review-f02.png)
+![RequireMFA re-attached to Developer-Group](images/10-access-review-f02.png.png)
 
 *The review found `RequireMFA` missing from `Developer-Group`. I re-attached it.*
 
