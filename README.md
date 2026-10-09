@@ -53,7 +53,7 @@ Rule: **User -> Group -> Policy -> Resource.** Nothing is attached directly to a
 
 ### Users, groups and least privilege
 
-![Users and groups](image/01-groups-and-users.png.png.)
+![Users and groups](images/01-groups-and-users.png.png.)
 
 *Four users and four groups. Access comes only from group membership.*
 
