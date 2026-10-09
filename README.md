@@ -57,7 +57,7 @@ Rule: **User -> Group -> Policy -> Resource.** Nothing is attached directly to a
 
 *Four users and four groups. Access comes only from group membership.*
 
-![Custom policies attached to groups](evidence/02-least-privilege-after.png)
+![Custom policies attached to groups](images/02-least-privilege-after.png.png)
 
 *Custom least-privilege policies replaced the broad AWS managed policies.*
 
